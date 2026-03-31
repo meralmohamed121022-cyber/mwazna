@@ -812,7 +812,17 @@
                         💳 Payment Card Methods
                         <button class="add-btn" type="button" onclick="addCardMethod()">➕ Add Card</button>
                     </div>
-
+<div class="input-group">
+                            <label>💳 Master Card</label>
+                            <div class="currency-display">
+                                <span class="currency-prefix official-riyal-symbol"></span>
+                                <input type="text" inputmode="decimal"
+                                       class="input-field card-method-input" data-type="mastercard"
+                                       placeholder="0.00"
+                                       oninput="formatInputValue(this); calculateAll()">
+                            </div>
+                        </div>
+                       
                     <div class="payment-methods" id="cardMethods">
                         <div class="input-group">
                             <label>📱 SPAN</label>
@@ -834,17 +844,7 @@
                                        oninput="formatInputValue(this); calculateAll()">
                             </div>
                         </div>
-                        <div class="input-group">
-                            <label>💳 Master Card</label>
-                            <div class="currency-display">
-                                <span class="currency-prefix official-riyal-symbol"></span>
-                                <input type="text" inputmode="decimal"
-                                       class="input-field card-method-input" data-type="mastercard"
-                                       placeholder="0.00"
-                                       oninput="formatInputValue(this); calculateAll()">
-                            </div>
-                        </div>
-                        <div class="input-group">
+                         <div class="input-group">
                             <label>💳 American Express</label>
                             <div class="currency-display">
                                 <span class="currency-prefix official-riyal-symbol"></span>
